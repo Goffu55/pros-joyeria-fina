@@ -1,0 +1,255 @@
+@font-face{
+	src: url(../fonts/amigos.otf);
+	font-family: amigos;
+}
+@font-face{
+	src: url(../fonts/calibrib.ttf);
+	font-family: calibri-b;
+}
+@font-face{
+	src: url(../fonts/calibriL.ttf);
+	font-family: calibri-L;
+}
+@font-face{
+	src: url(../fonts/calibriLI.ttf);
+	font-family: calibri-LI;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	max-width: 100%
+
+}
+
+a:hover{
+	text-decoration: none;
+}
+.flex{
+	display: flex;
+}
+
+header{
+	background-color: rgba(180, 149, 110, 0.80);
+	padding: 10px 70px;
+	position: fixed;
+	z-index: 1000;
+	max-width: 100%;
+	width: 100%;
+}
+.menu{
+	display: block;
+}
+.menu ul{
+	margin: 0;
+	list-style: none;
+	border: none;
+	outline: none;
+	max-width: 100%;
+}
+.menu a{
+	color: #ffffff;
+	font-family: calibri-b;
+	font-size: 19px;
+}
+.icon{
+	justify-content: space-around;
+}
+.icon i{
+	color: #ffffff;
+	font-size: 20px;
+}
+
+/*  SECITON 1  */
+
+.section1{
+	height: 87vh;
+	background-image: url(../img/banner-ecommerce.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+
+/*  ASIDE  */
+
+.store{
+	padding: 80px 0; 
+}
+aside{
+	margin-right: 180px; 
+}
+
+aside h2{
+	font-family: calibri-b;
+	font-size: 23px;
+	color: #bd9a63;
+}
+
+aside ul{
+	font-family: calibri-L;
+	padding-left: 10px;
+	list-style: none;
+	font-size: 17px;
+	color: #bd9a63;
+}
+table{
+	font-family: calibri-L;
+	font-size: 17px;
+	color: #bd9a63;
+	border: 2px solid #bd9a63;
+	width: 100%
+	
+}
+table th{
+	font-size: 20px;
+	border-bottom: 2px solid #bd9a63;
+	text-align: justify;
+	padding-left: 10px;
+}
+table td{
+	padding-left: 20px;
+}
+
+/*  COLORS  */
+
+.colors{
+	width: 100%;
+	margin-bottom: 10px;
+	flex-direction: row;
+}
+
+#red{
+	padding: 8px 8px;
+	background-color: red;
+	margin: 0 3px;
+	border-radius: 2px;
+}
+#brown{
+	padding: 8px 8px;
+	background-color: brown;
+	margin: 0 3px;
+	border-radius: 2px;
+}
+#purple{
+	padding: 8px 8px;
+	background-color: purple;
+	margin: 0 3px;
+	border-radius: 2px;
+}
+#yellow{
+	padding: 8px 8px;
+	background-color: yellow;
+	margin: 0 3px;
+	border-radius: 2px;
+}
+
+/*  PRODUCTS  */
+
+.container-product{
+	margin: 0;
+	padding: 25px 10px;
+	border-radius: 15px;
+	box-shadow: 5px 5px 20px -11px #666666;
+	justify-content: center;
+	flex-direction: column;
+}
+.img-product{
+	width: 50%;
+	padding: 20px 0;
+	margin: 0 auto;
+}
+.title-product{
+	text-align: center;
+	color: #b98c5e;
+	font-family: calibri-b;
+	font-size: 20px;
+}
+.description-product{
+	text-align: center;
+	color: #606163;
+	font-family: calibri-L;
+	font-size: 15px;
+}
+.button-product{
+	font-family: calibri-b;
+	background-color: #b68a5d;
+	color: #ffffff;
+	font-size: 15px;
+	border: 0;
+	padding: 2px 15px;
+	border-radius: 7px;
+	text-align: center;
+}
+
+/*  SECTION5  */
+
+.section5{
+	background-color: #fbf4ea;
+	margin: 0;
+}
+
+.section5 p{
+	color: #b68a5d;
+	font-family: calibri-LI;
+	font-size: 28px;
+	padding: 80px 300px;
+	margin-bottom: 0;
+	font-weight: 500;
+}
+
+/*  FOOTER  */
+
+footer{
+	background-color: #bea47b;
+}
+footer div{
+	justify-content: center;
+	padding: 30px 0;
+}
+
+footer img{
+	width: 13%;
+}
+
+@media screen and (max-width: 576px){
+
+/*  HEADER  */
+
+	header{
+		padding: 10px 5px;
+		position: fixed;
+		z-index: 1000;
+		max-width: 100%;
+		width: 100%;
+	}
+
+	/*MENU*/
+
+	.menu .ul{
+		margin: 0;
+		list-style: none;
+		border: none;
+		outline: none;
+		max-width: 100%;
+		width: 100%
+	}
+
+	.menu-bars{
+		color: #ffffff;
+	}
+	.navbar-toggler:active{
+		border: 1px solid red;
+	}
+	.icon{
+		padding: 0 10px;
+	}
+	.icon a{
+		font-size: 18px;
+	}
+
+	.section1{
+		height: 60vh;
+		background-size: cover;
+	}
+}
